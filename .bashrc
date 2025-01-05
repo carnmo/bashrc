@@ -1,5 +1,4 @@
-#Java
-
+#java
 export JAVA=~/dev/java
 export JAVA_HOME=$JAVA/jdk
 export PATH=$PATH:$JAVA_HOME/bin
@@ -10,7 +9,7 @@ export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 
 [[ $- != *i* ]] && return
 
-#Aliases
+#aliases
 alias ai='echo -e `shuf /usr/share/dict/cracklib-small | head -n$(($RANDOM%4+1)) | tr "\n" " "`'
 alias aur=' cd ~/dev/repos/aur'
 alias dev='cd ~/dev/'
@@ -20,5 +19,5 @@ alias gh=' cd ~/dev/repos/github'
 alias grep='grep --color=auto'
 alias ls='ls -v --group-directories-first --color=auto'
 
-#Prompt
+#prompt
 export PS1='\w\$ '
