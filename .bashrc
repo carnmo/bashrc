@@ -4,6 +4,9 @@ export JAVA_HOME=$JAVA/jdk
 export PATH=$PATH:$JAVA_HOME/bin
 export PATH=$PATH:~$JAVA/maven/bin
 
+#rust                                                                                                
+. "$HOME/.cargo/env"
+
 #ssh-agent
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 
@@ -18,6 +21,7 @@ alias dt='date "+%Y-%m-%d %H:%M:%S"'
 alias gh=' cd ~/dev/repos/github'
 alias grep='grep --color=auto'
 alias ls='ls -v --group-directories-first --color=auto'
+alias pu='sudo pacman -Syyu'
 
 #prompt
 export PS1='\w\$ '
