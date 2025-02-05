@@ -4,9 +4,6 @@ export JAVA_HOME=$JAVA/jdk
 export PATH=$PATH:$JAVA_HOME/bin
 export PATH=$PATH:~$JAVA/maven/bin
 
-#rust                                                                                                
-. "$HOME/.cargo/env"
-
 #ssh-agent
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 
