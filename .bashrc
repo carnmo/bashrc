@@ -1,8 +1,15 @@
+#dotnet
+export DOTNET_ROOT=~/dev/dotnet/dotnet-sdk
+export PATH=$PATH:$DOTNET_ROOT
+
 #java
 export JAVA=~/dev/java
 export JAVA_HOME=$JAVA/jdk
 export PATH=$PATH:$JAVA_HOME/bin
 export PATH=$PATH:$JAVA/maven/bin
+
+#node
+export PATH=$PATH:~/dev/node/node/bin
 
 #ssh-agent
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
