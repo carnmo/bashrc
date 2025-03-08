@@ -1,3 +1,6 @@
+#home bin
+export PATH=$PATH:~/bin
+
 #java
 export JAVA_DIR=~/dev/java
 export JAVA_HOME=$JAVA_DIR/jdk
