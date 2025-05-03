@@ -1,22 +1,3 @@
-#history
-HISTCONTROL=ignoreboth
-HISTFILESIZE=2000
-HISTSIZE=1000
-shopt -s histappend
-shopt -s checkwinsize
-
-#autocompletion
-if ! shopt -oq posix; then
-  if [ -f /usr/share/bash-completion/bash_completion ]; then
-    . /usr/share/bash-completion/bash_completion
-  elif [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-  fi
-fi
-
-#gcc colors
-export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
 #home bin
 export PATH=$PATH:~/bin
 
@@ -44,4 +25,4 @@ function parse_git_dirty {
 function parse_git_branch {
 	git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/ (\1$(parse_git_dirty))/"
 }
-export PS1="\[\033[32m\]\w\[\033[31m\]\$(parse_git_branch)\[\033[00m\] $ "
+export PS1="\[\033[1;35m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
