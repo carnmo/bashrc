@@ -7,6 +7,9 @@ export JAVA_HOME=$JAVA_DIR/jdk
 export PATH=$PATH:$JAVA_HOME/bin
 export PATH=$PATH:$JAVA_DIR/maven/bin
 
+#ssh-agent
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
+
 [[ $- != *i* ]] && return
 
 #aliases
