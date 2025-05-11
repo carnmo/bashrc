@@ -20,6 +20,7 @@ alias dt='date "+%Y-%m-%d %H:%M:%S"'
 alias gh=' cd ~/dev/repos/github'
 alias grep='grep --color=auto'
 alias ls='ls -v --group-directories-first --color=auto'
+alias pu='sudo pacman -Syyu'
 
 #prompt
 function parse_git_dirty {
