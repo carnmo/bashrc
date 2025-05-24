@@ -7,6 +7,10 @@ export JAVA_HOME=$JAVA_DIR/jdk
 export PATH=$PATH:$JAVA_HOME/bin
 export PATH=$PATH:$JAVA_DIR/maven/bin
 
+#dotnet
+export DOTNET_ROOT=~/dev/dotnet/sdk
+export PATH=$PATH:$DOTNET_ROOT
+
 #ssh-agent
 export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 
