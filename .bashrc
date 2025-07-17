@@ -18,13 +18,15 @@ export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 
 #aliases
 alias ai='echo -e `shuf /usr/share/dict/cracklib-small | head -n$(($RANDOM%4+1)) | tr "\n" " "`'
-alias aur='cd ~/dev/repos/aur'
+#alias aur='cd ~/dev/repos/aur'
 alias dev='cd ~/dev/'
+alias diary='vim ~/data/documents/diary.txt'
 alias diff='diff --color'
 alias dt='date "+%Y-%m-%d %H:%M:%S"'
 alias gh=' cd ~/dev/repos/github'
 alias grep='grep --color=auto'
 alias ls='ls -v --group-directories-first --color=auto'
+alias nb='vim ~/data/documents/notebook.txt'
 alias pu='sudo pacman -Syyu'
 
 #prompt
